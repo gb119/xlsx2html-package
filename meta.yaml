@@ -39,11 +39,11 @@ about:
   home: "https://github.com/Apkawa/xlsx2html"
   license: MIT
   license_family: MIT
-  license_file: 
-  summary: "A generic api for oauth2"
+  license_file: LICENSE
+  summary: "An XLSX to HTML convertor"
   doc_url: 
-  dev_url: 
+  dev_url: https://github.com/Apkawa/xlsx2html
 
 extra:
   recipe-maintainers:
-    - your-github-id-here
+    - https://github.com/gb119
