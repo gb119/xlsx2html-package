@@ -1,0 +1,49 @@
+{% set name = "xlsx2html" %}
+{% set version = "0.4.0" %}
+
+package:
+  name: "{{ name|lower }}"
+  version: "{{ version }}"
+
+source:
+  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
+  sha256: 9303d4d6e427bd34a687fc17973d695180359e8d3a01dfd4a5da02592e5fd0c3
+
+build:
+  number: 0
+  script: "{{ PYTHON }} -m pip install . -vv"
+
+requirements:
+  host:
+    - babel >=2.3.4
+    - openpyxl >=2.4.8
+    - packaging >=20.4
+    - pip
+    - python
+    - six
+  run:
+    - babel >=2.3.4
+    - openpyxl >=2.4.8
+    - packaging >=20.4
+    - python
+    - six
+
+test:
+  imports:
+    - xlsx2html
+    - xlsx2html.constants
+    - xlsx2html.format
+    - xlsx2html.utils
+
+about:
+  home: "https://github.com/Apkawa/xlsx2html"
+  license: MIT
+  license_family: MIT
+  license_file: 
+  summary: "A generic api for oauth2"
+  doc_url: 
+  dev_url: 
+
+extra:
+  recipe-maintainers:
+    - your-github-id-here
