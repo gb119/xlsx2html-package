@@ -1,13 +1,13 @@
 {% set name = "xlsx2html" %}
-{% set version = "0.4.4" %}
+{% set version = "0.6.2" %}
 
 package:
   name: "{{ name|lower }}"
   version: "{{ version }}"
 
 source:
-  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: e5dace87e4f572c5fa3b5258cf04f5a6dc79e20a06156be99e8bd4bb9247fc2f
+  url: "https://files.pythonhosted.org/packages/c6/1b/770c7c3d73b7dd0309f8aa640be19782f6762f03caa871edcb8c3fbd0ae6/xlsx2html-0.6.2.tar.gz"
+  sha256: e3be926dca7c3217eabe6b9e4e50447b1c65cd2a16a711e395f5e9a1ac18ce9e
 
 build:
   number: 0
